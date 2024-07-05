@@ -69,7 +69,7 @@ fun SignInScreen(
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.logo_sb),
+                        painter = painterResource(id = R.drawable.logo_starbock2),
                         contentDescription = null,
                         modifier = Modifier.size(100.dp),
                         contentScale = ContentScale.Crop,
@@ -77,7 +77,7 @@ fun SignInScreen(
                     Spacer(modifier = Modifier.height(12.dp))
 
                     Text(
-                        text = "Welcome Back To",
+                        text = "Selamat Datang",
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color.Black
@@ -95,20 +95,20 @@ fun SignInScreen(
         }
         Spacer(modifier = Modifier.size(32.dp))
         Text(
-            text = "Sign In",
+            text = "Masuk",
             fontSize = 28.sp,
             fontWeight = FontWeight.W500
         )
         Text(
             modifier = Modifier.padding(vertical = 12.dp),
-            text = "Sip the Starbucks delight with us, your ideal coffee break is here!",
+            text = "Starbucks memberikan semangat dengan coffe!!",
             fontSize = 14.sp,
             textAlign = TextAlign.Justify
         )
         OutlinedTextField(
             value = email,
             onValueChange = setEmail,
-            label = { Text(text = "Email Address") },
+            label = { Text(text = "Email") },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         )
@@ -116,7 +116,7 @@ fun SignInScreen(
         OutlinedTextField(
             value = password,
             onValueChange = setPassword,
-            label = { Text(text = "Password") },
+            label = { Text(text = "Kata Sandi") },
             visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             modifier = Modifier.fillMaxWidth(),
@@ -127,7 +127,7 @@ fun SignInScreen(
             horizontalArrangement = Arrangement.End
         ) {
             TextButton(onClick = { /*TODO*/ }) {
-                Text(text = "Forget Password?")
+                Text(text = "Lupa Password?")
             }
         }
         Button(
@@ -137,16 +137,16 @@ fun SignInScreen(
                 containerColor = Color(0xFF006D69)
             )
         ) {
-            Text(text = "Login")
+            Text(text = "Masuk")
         }
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            Text(text = "Don't have an Account?")
+            Text(text = "Belum memiliki akun?")
             TextButton(onClick = onSignUpClick) {
-                Text(text = "Sign Up", color = Color(0xFF006D69))
+                Text(text = "Daftar", color = Color(0xFF006D69))
             }
         }
 

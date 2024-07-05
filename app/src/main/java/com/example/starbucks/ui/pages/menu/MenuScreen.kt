@@ -76,7 +76,7 @@ fun MenuScreen() {
         ) {
             Box {
                 Image(
-                    painter = painterResource(id = R.drawable.logo_sb),
+                    painter = painterResource(id = R.drawable.logo_starbock),
                     contentDescription = null,
                     contentScale = ContentScale.Crop,
                     modifier = Modifier.size(80.dp),

@@ -77,7 +77,7 @@ fun SignUpScreen(
         ) {
             Box {
                 Image(
-                    painter = painterResource(id = R.drawable.logo_sb),
+                    painter = painterResource(id = R.drawable.logo_starbock2),
                     contentDescription = null,
                     contentScale = ContentScale.Crop,
                     modifier = Modifier.size(80.dp),
@@ -88,7 +88,7 @@ fun SignUpScreen(
                 modifier = Modifier.padding(start = 16.dp)
             ) {
                 Text(
-                    text = "Welcome to ",
+                    text = "Selamat Datang ",
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Black
@@ -103,23 +103,23 @@ fun SignUpScreen(
         }
         Spacer(modifier = Modifier.size(24.dp))
         Text(
-            text = "Sign Up",
+            text = "Daftar",
             fontSize = 28.sp,
             fontWeight = FontWeight.W500
         )
         Text(
             modifier = Modifier.padding(vertical = 12.dp),
-            text = "Kickstart your mornings with Starbucks and unlock rewards as you go. Sign up now!",
+            text = "Nikmati coffemu bersama starbucks!",
             fontSize = 13.sp,
             textAlign = TextAlign.Justify
         )
 
         // Section Login Details
-        SectionTitle(title = "Login Details")
+        SectionTitle(title = "Detail Masuk")
         OutlinedTextField(
             value = email,
             onValueChange = setEmail,
-            label = { Text(text = "Email Address") },
+            label = { Text(text = "Email") },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         )
@@ -127,7 +127,7 @@ fun SignUpScreen(
         OutlinedTextField(
             value = password,
             onValueChange = setPassword,
-            label = { Text(text = "Password") },
+            label = { Text(text = "Kata Sandi") },
             visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             modifier = Modifier.fillMaxWidth(),
@@ -137,11 +137,11 @@ fun SignUpScreen(
         Spacer(modifier = Modifier.size(20.dp))
 
         // Section Personal Details
-        SectionTitle(title = "Personal Details")
+        SectionTitle(title = "Detail Pengguna")
         OutlinedTextField(
             value = name,
             onValueChange = setName,
-            label = { Text(text = "Name") },
+            label = { Text(text = "Nama") },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         )
@@ -149,7 +149,7 @@ fun SignUpScreen(
         OutlinedTextField(
             value = address,
             onValueChange = setAddress,
-            label = { Text(text = "Address") },
+            label = { Text(text = "Alamat") },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         )
@@ -157,7 +157,7 @@ fun SignUpScreen(
         OutlinedTextField(
             value = mobileNumber,
             onValueChange = setMobileNumber,
-            label = { Text(text = "Mobile Number") },
+            label = { Text(text = "Nomor Telepon") },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         )
@@ -171,7 +171,7 @@ fun SignUpScreen(
                 containerColor = Color(0xFF006D69)
             )
         ) {
-            Text(text = "Register")
+            Text(text = "Daftar")
         }
 
         Row(
@@ -180,12 +180,12 @@ fun SignUpScreen(
             horizontalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Already have an account?",
+                text = "Sudah memiliki akun?",
                 fontSize = 14.sp
             )
             TextButton(onClick = onSignInClick) {
                 Text(
-                    text = "Sign In",
+                    text = "Masuk",
                     fontSize = 14.sp,
                     color = Color(0xFF006D69)
                 )

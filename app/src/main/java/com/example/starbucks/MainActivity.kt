@@ -83,7 +83,7 @@ class MainActivity : ComponentActivity() {
                 .background(Color.White)
         ) {
             Image(
-                painter = painterResource(id = R.drawable.logo_start),
+                painter = painterResource(id = R.drawable.logo_starbock),
                 contentDescription = "Logo",
                 modifier = Modifier.size(200.dp)
             )
